@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background: #F1A05C;
+    background-image: url(./pix/Vector-1.svg), url(./pix/Vector-2.svg);
+    background-repeat: no-repeat;
+    background-position: 112% -4%, 100% 100%;
+    background-size: 900px 865px, 984px 1006px;
+    background-attachment: fixed;
+    color: #021718;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 60px;
+    top: -4px;
+    background: #FFFFFA;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    font-size: 58px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.navigation {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 4;
+}
+
+.navigation ul {
+    display: flex;
+    width: 50%;
+    list-style: none;
+}
+
+.navigation li {
+    font-size: 20px;
+    font-weight: 400;
+    flex: 1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#text-block {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#text-block h1 {
+    font-size: 58px;
+    font-weight: 800;
+}
+
+#text-block p {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 35% 20px 0;
+    line-height: 1.5em;
+}
+
+#text-block #btn {
+    background-color: #01847F;
+    color: #FFFFFA;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 8px;
+}
+
+#photo-block {
+    flex: 1;
+    padding-top: 125px;
+    position: relative;
+    height: 600px;
+}
+
+#photo-block img {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    transition: 2s;
+    top: 100px;
+}
+
+#photo-block img:hover {
+    transform: rotate(-5.57deg);
+}
+
+#photo-bg {
+    height: 500px;
+    width: 500px;
+    background: #44A1A0;
+    transform: rotate(-5.47deg);
+    position: absolute;
+    top: 130px;
+    left: 50px;
+}
